@@ -2,7 +2,7 @@
 
 ## Problema inicial
 
-Una persona que se dedica a montar ordenadores pasa demasiado tiempo mirando en distintas webs para encontrar la mejor para comprar un componente. Además no sabe si se encuentra en un mal momento para comprarlo, en el que haya un repunte de precios, y quiere asegurarse de gastar el dinero adecuadamente, mejor comprando en un momento en el que las piezas estén más baratas.
+Una persona que se dedica a montar ordenadores pasa demasiado tiempo mirando en distintas webs para encontrar la mejor para comprar un componente. Por tanto quiere comparar de forma rápida cada pieza para quedarse con la de mejor precio. Además quiere saber cuando hay ofertas, viendo que hay un mínimo en el precio del producto.
 
 ## Configuración del proyecto
 
