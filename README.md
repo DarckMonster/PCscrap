@@ -6,6 +6,8 @@ Una persona que se dedica a montar ordenadores pasa demasiado tiempo mirando en 
 
 ## Configuración del proyecto
 
-![ClaveSSH](https://github.com/DarckMonster/PCscrap/Docs/ClaveSSH.png)
-![Configuración de repositorio](https://github.com/DarckMonster/PCscrap/Docs/gitConfig.png)
+### Clave ssh
+![ClaveSSH](Docs/ClaveSSH.png)
+### Configuración de repositorio
+![Config](Docs/gitConfig.png)
 
