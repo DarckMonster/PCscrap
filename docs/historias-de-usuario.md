@@ -1,4 +1,10 @@
 # Historias de usuario
 
-## Juan, 
-Juan deduca su tiempo libre para sacar algo de dinero montando ordenadores para gente en su pueblo y cuando recibe una oferta quiere dedicar menos tiempo a comparar donde comprar los distintos componentes y dedicar más tiempo al diseño del ordenador.
+* [[HU1] Mario](https://github.com/DarckMonster/PCscrap/issues/3) quiere actualizar su ordenador con una nueva tarjeta gráfica RTX 4080 y quiere tener una lista de precios en distintas webs para encontrar la más barata dentro de sus tiendas de confianza.
+  
+* [[HU2] Juan](https://github.com/DarckMonster/PCscrap/issues/4) se dedica a montar ordenadores y quiere encontrar una tarjeta gráfica a buen precio, así que quiere comparar los precios de este tipo de componentes en distintas webs de forma rápida.
+  
+* [[HU3] Marta](https://github.com/DarckMonster/PCscrap/issues/5) no sabe mucho de ordenadores pero le han dicho que un buen procesador para actualizar su ordenador es el ryzen 5 5600, así que busca una oferta de dicho componente para ahorrar dinero.
+  
+* [[HU4] Antonio](https://github.com/DarckMonster/PCscrap/issues/6) se dedica a minar criptomonedas y quiere actualizar sus tarjetas gráficas a la nueva generación. Para maximizar su benificio quiere esperar a encontrar una oferta para comprar una tanda de este tipo de componente lo más rápido posible.
+  
