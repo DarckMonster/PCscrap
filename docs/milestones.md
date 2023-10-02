@@ -4,7 +4,7 @@
 
   * Analizamos las HUs e identificamos el dominio del problema. Es necesaria la extracción de datos para su posterior estruturación y así obtener un pmv para las exigencias de los usuarios.
 
-* [ ] [[M1] Estructuración de datos](https://github.com/DarckMonster/PCscrap/milestone/2)
+* [ ] [[M1] Ordenación de datos](https://github.com/DarckMonster/PCscrap/milestone/2)
 
   * Una vez tenemos todos los datos de precios por modelo, queda estructurarlos en forma de lista por modelo y ordenandolos por precio.
 
