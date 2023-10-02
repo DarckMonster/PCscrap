@@ -6,7 +6,7 @@
 
 * [ ] [[M1] Ordenación de datos](https://github.com/DarckMonster/PCscrap/milestone/2)
 
-  * Una vez tenemos todos los datos de precios por modelo, queda estructurarlos en forma de lista por modelo y ordenandolos por precio.
+  * Una vez tenemos todos los datos de precios por modelo solo queda darles un orden para que el usuario pueda visualizarlos de forma clara.
 
 * [ ] [[M2] Sistema de ofertas](https://github.com/DarckMonster/PCscrap/milestone/3)
 
