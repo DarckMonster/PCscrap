@@ -10,7 +10,7 @@ Juan se dedica a montar ordenadores y quiere encontrar la tarjeta gráfica adecu
 
 ## Marta
 
-Marta no sabe mucho de oredenadores pero le han dicho un modelo de procesador que se adecúa a su ordenador. Quiere comprar el ryzen 5 5600 pero quiere esperar a encontrar una buena oferta.
+Marta no sabe mucho de oredenadores pero le han dicho un modelo de procesador que se adecúa a su ordenador. Quiere comprar el procesador pero quiere esperar a encontrar una buena oferta.
 
 ## Antonio
 
