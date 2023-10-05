@@ -6,17 +6,16 @@
 
 * [ ] [[M1] Algoritmo de web srapping](https://github.com/DarckMonster/PCscrap/milestone/2)
 
-  * Creación del algoritmo para hacer web scrapping a las principales páginas de venta de componentes. Con este, conseguiremos los precios de cada modelo de componente.
+  * Creación del algoritmo para hacer web scrapping a las principales páginas de venta de componentes. Con este, queremos conseguir un módulo para obtener los precios de cada modelo de componente. La viabilidad del producto se verá reflejada si supera los tests.
   
 * [ ] [[M2] Sistema de recomendación](https://github.com/DarckMonster/PCscrap/milestone/3)
 
   * El objetivo es que el usuario sepa que componente le conviene comprar.
 
-  * Creación de un algoritmo de recomendación para que el usuario elija el mejor componente ajustándose a sus necesidades. Estas necesidades serán parámetros como resolución y fps que quiere obtener en un juego concreto. Además se debe revisar la compatibilidad de componentes como el procesador con la placa base.
+  * Creación de un algoritmo de recomendación para que el usuario elija el mejor componente ajustándose a sus necesidades. Además se debe revisar la compatibilidad de componentes como el procesador con la placa base. El producto se debe pasar los test para comporbar su viabilidad.
 
 * [ ] [[M3] Sistema de notificacion de ofertas](https://github.com/DarckMonster/PCscrap/milestone/4)
 
-  * Queremos saber cuando un componente ha alcanzado un mínimo relativo. Para llevar esto a cabo hay que tener un historial de precios de cada producto para saber cuando hay una bajada de precio.
-
-  * Cuando hay una oferta tienes que ir a verla manualmente, por tanto, queremos hacer el usuario pueda escojer un componente y cuando este esté en oferta el usuario tendrá una notificación.
+  * El objetivo es la cración de un sistema de ofertas de los componentes. demás queremos que los usuarios puedan recibir notificaciones de estas ofertas. La viabilidad del producto se verá reflejada si supera los tests.
+   
 
