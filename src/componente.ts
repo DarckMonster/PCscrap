@@ -1,4 +1,4 @@
-import { TipoComponente } from "./tipoComponente";
+import { TipoComponente } from "./tipo_componente";
 
 /**
  * Clase que representa un componente de un ordenador.
