@@ -1,2 +1,2 @@
-lenguaje:
-entidad:
+lenguaje: TypeScript
+entidad: src/scraping.ts
