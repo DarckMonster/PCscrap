@@ -5,6 +5,9 @@
   "devDependencies": {
     "bun-types": "latest"
   },
+  "scripts": {
+    "check": "bun run tsc --noEmit ./src/scraping.ts"
+ },
   "peerDependencies": {
     "typescript": "^5.0.0"
   }
