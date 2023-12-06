@@ -23,7 +23,8 @@ La filosofía que vamos a seguir para desarrollar los test es **F.I.R.S.T**:
 - **Thorough**: Hay que proponer desde casos fáciles hasta complejos, para ver cómo se comporta el programa a partir de distintos datos de entrada.
 
 
-## Apuntes 
+## Anotaciones 
 ### Pccomponentes
-* nombre &rarr; title="..." o en data-product-name="..."
-* precio &rarr; en "product-card -> product-card__info-container" ejemplo: 659,9€ siempre tiene el símbolo de € al final y si está en oferta está algo más escondido y tiene 2 precios, coger el primero.
+* En *div id="product-grid"*
+* nombre &rarr; *title="..."* o en *data-product-name="..."*
+* precio &rarr; en *"product-card" -> "product-card__info-container"* ejemplo: 659,9€ siempre tiene el símbolo de € al final y si está en oferta está algo más escondido y tiene 2 precios, coger el primero.
