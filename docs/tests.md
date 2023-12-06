@@ -21,3 +21,9 @@ La filosofía que vamos a seguir para desarrollar los test es **F.I.R.S.T**:
 - **Self-Validating**: Los datos de salida y entrada esperados son automáticos y no hace falta esperar ninguna acción manual.
 
 - **Thorough**: Hay que proponer desde casos fáciles hasta complejos, para ver cómo se comporta el programa a partir de distintos datos de entrada.
+
+
+## Apuntes 
+### Pccomponentes
+* nombre &rarr; title="..." o en data-product-name="..."
+* precio &rarr; en "product-card -> product-card__info-container" ejemplo: 659,9€ siempre tiene el símbolo de € al final y si está en oferta está algo más escondido y tiene 2 precios, coger el primero.
