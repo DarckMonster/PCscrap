@@ -78,7 +78,3 @@ export class Scraping {
     this.componentes = new Array();
   }
 }
-
-// let pccomponentes = new Scraping(new Tienda("https://www.pccomponentes.com",["/procesadores","/tarjetas-graficas"]))
-
-// console.log(pccomponentes);
