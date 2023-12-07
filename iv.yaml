@@ -3,3 +3,4 @@ entidad: src/scraping.ts
 automatizar:
   fichero: package.json
   orden: bun run
+test: src/_test.ts
