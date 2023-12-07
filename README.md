@@ -16,7 +16,7 @@ bun run check
 
 Para hacer un test rápido del funcionamiento del código simplemente ejecutamos el comando que nos porporciona el propio bun:
 ```bash
-bun test
+bun run test
 ```
 
 ## Documentación
