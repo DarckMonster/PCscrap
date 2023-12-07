@@ -14,7 +14,7 @@ La filosofía que vamos a seguir para desarrollar los test es **F.I.R.S.T**:
 
 - **Fast**: Los tests deben ejecutarse de forma rápida. De esta forma, no tiene importancia ejecutar los test muchas veces, ya que se tarda poco tiempo en ver los resultados.
 
-- **Isolated**: Los tests ejecutan partes aisladas denuestro código. En general, la mayoría de tests se encargan de probar partes aisladas del código y no dependen de datos externos o APIs.
+- **Isolated**: Los tests ejecutan partes aisladas de nuestro código. En general, la mayoría de tests se encargan de probar partes aisladas del código y no dependen de datos externos o APIs.
 
 - **Repeatable**: Los tests siempre devuelven los valores esperados y se testea acorde a estos.
 
@@ -24,6 +24,9 @@ La filosofía que vamos a seguir para desarrollar los test es **F.I.R.S.T**:
 
 
 ## Anotaciones 
+
+El programa tiene una única funcionalidad así que solo hace falta hacer un test por tienda. El test es sencillo, tengo un par de páginas web descargadas y sobre ellas debemos tener un output deseado que es lo que comprueba los tests. El test es rápido (~50ms) y automático. No requiere de ninguna acción adicional, solo hace falta tener el `test.txt` adecuado a las páginas web introducidas.
+
 ### Pccomponentes
 * En *div id="product-grid"*
 * nombre &rarr; *title="..."* o en *data-product-name="..."*
