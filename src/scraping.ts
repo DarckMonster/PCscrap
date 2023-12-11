@@ -1,6 +1,6 @@
 import { Componente } from "./componente";
 import { Tienda } from "./tienda";
-import { TipoComponente } from "./tipo_componente";
+import { TipoComponente, modelosGPU } from "./tipo_componente";
 
 function eurotoNumber(str: string) : number {
   str=str.slice(0,-1).replace('.','').replace(',','.');
@@ -69,6 +69,10 @@ export class Scraping {
     } else {
       console.error("elementos no encontrados");
     }
+  }
+
+  compMasBarato(modelo: modelosGPU) {
+    
   }
 
   constructor(
