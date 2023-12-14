@@ -134,8 +134,8 @@ export class Scraping {
     this.tienda = tienda; 
     this.componentes = new Array();
 
-    this.scrape('/home/juan/Public/IV/PCscrap/docs/PcComponentesGPU.html', TipoComponente.GPU);
-    this.scrape('/home/juan/Public/IV/PCscrap/docs/PcComponentesCPU.html', TipoComponente.CPU);
+    this.scrape('./docs/PcComponentesGPU.html', TipoComponente.GPU);
+    this.scrape('/docs/PcComponentesCPU.html', TipoComponente.CPU);
   }
 }
 

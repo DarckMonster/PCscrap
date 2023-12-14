@@ -6,7 +6,7 @@ import { file } from "bun";
 
 
 
-const test_componentes = await file('/home/juan/Public/IV/PCscrap/docs/test_componentes.txt').text();
+const test_componentes = await file('./docs/test_componentes.txt').text();
 let test_array = test_componentes.split(/\r?\n/);
 let scraping = new Scraping(new Tienda("https://www.pccomponentes.com",["/procesadores","/tarjetas-graficas"]));
 
@@ -19,7 +19,7 @@ test("PcComponentes", () => {
   }
 });
 
-const test_baratas = await file('/home/juan/Public/IV/PCscrap/docs/test_baratas.txt').text();
+const test_baratas = await file('./docs/test_baratas.txt').text();
 let test_price= test_baratas.split(/\r?\n/);
 
 let i = 0;
