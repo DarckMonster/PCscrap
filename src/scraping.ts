@@ -1,11 +1,12 @@
 import { Componente } from "./componente";
 import { Tienda } from "./tienda";
+import { Modelos } from "./tipo_componente";
 
 export class Scraping {
   private tienda: Tienda;
   private componentes: Componente[];
 
-  gpuMasBarata() : Componente {
+  gpuMasBarata(modelo: Modelos) : Componente {
 
   }
 
