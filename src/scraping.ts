@@ -86,6 +86,12 @@ export class Scraping {
   constructor (tienda: Tienda) {
     this.tienda=tienda;
     this.componentes=new Array();
+
+    // Aquí, con tienda tenemos las url de las paginas a descargar,
+    // cosa que se debería hacer con una funcion...
+    // En lugar de tener los HTML ya descargados 
+    this.scrape('./tests/PcComponentesGPU.html', TipoComponente.GPU);
+    this.scrape('./tests/PcComponentesCPU.html', TipoComponente.CPU);
   }
 }
 
