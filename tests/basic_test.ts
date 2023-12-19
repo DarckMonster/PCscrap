@@ -6,7 +6,7 @@ import { Modelos } from "../src/tipo_componente";
 
 
 const scraping = new Scraping(new Tienda("https://www.pccomponentes.com",["/procesadores","/tarjetas-graficas"]));
-const test_baratas = await file('./test_baratas.txt').text();
+const test_baratas = await file('./tests/test_baratas.txt').text();
 const test_price = test_baratas.split(/\r?\n/);
 
 let i = 0;

@@ -80,7 +80,20 @@ export class Scraping {
   }
 
   gpuMasBarata(modelo: Modelos) : Componente {
+    let comparar: Componente[] = new Array();
+    for (let p of this.componentes)
+      if (p.modelo==modelo)
+        comparar.push(p);
 
+    if (comparar.length==0)
+      console.error("No hay componentes de este modelo");
+
+    let barato = new Componente("",TipoComponente.GPU,Modelos.UNKNOWN,Infinity);
+    for (const c of comparar)
+      if (c.precioEur<barato.precioEur)
+        barato=c;      
+
+      return barato;
   }
 
   constructor (tienda: Tienda) {
