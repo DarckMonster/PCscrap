@@ -7,7 +7,7 @@ const modelos = Object.values(Modelos).filter((item) => {return item;});
 
 function eurotoNumber(str: string) : number {
   str=str.slice(0,-1).replace('.','').replace(',','.');
-  let n: number = parseFloat(str);
+  const n: number = parseFloat(str);
   return n;
 }
 
@@ -16,7 +16,7 @@ function toNombre(str: string) : string {
 }
 
 function extraerModelo(nombre: string) : Modelos {
-  let plano = nombre.replaceAll(' ','').toUpperCase();
+  const plano = nombre.replaceAll(' ','').toUpperCase();
   let simple;
   let xt7900;
 
@@ -54,8 +54,8 @@ export class Scraping {
     const pagina_web = await file(str).text();
 
     let nombre = "", precio = 0, modelo=Modelos.UNKNOWN;
-    let regex = new RegExp(/"product-list-middle-container"|"product-grid"|(data-product-name=".+?")|((\d+\.)?\d{1,3}(,)?(\d+(<!-- -->)?€))/g);
-    let elementos = pagina_web.match(regex);
+    const regex = new RegExp(/"product-list-middle-container"|"product-grid"|(data-product-name=".+?")|((\d+\.)?\d{1,3}(,)?(\d+(<!-- -->)?€))/g);
+    const elementos = pagina_web.match(regex);
 
     let lista: string[] = [];
     let centro = false;
