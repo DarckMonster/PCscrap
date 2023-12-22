@@ -72,7 +72,7 @@ export class Scraping {
         nombre=toNombre(lista[i]);
         precio=eurotoNumber(lista[i+1]);
         modelo=extraerModelo(nombre);
-        this.componentes.push({nombre,tipoC,modelo,precio}));
+        this.componentes.push({nombre: nombre,tipo: tipoC,modelo: modelo,precioEur: precio});
       }
     } else {
       console.error("elementos no encontrados");
@@ -88,7 +88,7 @@ export class Scraping {
     if (comparar.length==0)
       console.error("No hay componentes de este modelo");
 
-    let barato = new Componente("",TipoComponente.GPU,Modelos.UNKNOWN,Infinity);
+    let barato: Componente={nombre: "", tipo: TipoComponente.GPU, modelo: Modelos.UNKNOWN, precioEur: Infinity};
     for (const c of comparar)
       if (c.precioEur<barato.precioEur)
         barato=c;      
