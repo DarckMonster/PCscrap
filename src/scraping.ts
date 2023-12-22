@@ -72,7 +72,7 @@ export class Scraping {
         nombre=toNombre(lista[i]);
         precio=eurotoNumber(lista[i+1]);
         modelo=extraerModelo(nombre);
-        this.componentes.push(new Componente(nombre,tipoC,modelo,precio));
+        this.componentes.push({nombre,tipoC,modelo,precio}));
       }
     } else {
       console.error("elementos no encontrados");
