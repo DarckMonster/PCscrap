@@ -19,21 +19,6 @@ En este objetivo tenemos que programar la lógica de negocio ya que necesitamos 
 
 En mi caso voy ha hacer el código adaptándolo a los tests. Además voy a seguir la metodología **BDD** (*Behavior Driven Development*).Esta es una estrategia de desarrollo dirigido por comportamiento, que ha evolucionado desde TDD (Test Driven Development), aunque no se trata de una técnica de testing. BDD se define en un idioma común entre todos los stakeholders, las pruebas se centran en el usuario y el comportamiento del sistema.
 
-# Filosofía seguida a la hora de desarrollar los tests
-
-La filosofía que vamos a seguir para desarrollar los test es **F.I.R.S.T**:
-
-- **Fast**: Los tests deben ejecutarse de forma rápida. De esta forma, no tiene importancia ejecutar los test muchas veces, ya que se tarda poco tiempo en ver los resultados.
-
-- **Isolated**: Los tests ejecutan partes aisladas de nuestro código. En general, la mayoría de tests se encargan de probar partes aisladas del código y no dependen de datos externos o APIs.
-
-- **Repeatable**: Los tests siempre devuelven los valores esperados y se testea acorde a estos.
-
-- **Self-Validating**: Los datos de salida y entrada esperados son automáticos y no hace falta esperar ninguna acción manual.
-
-- **Thorough**: Hay que proponer desde casos fáciles hasta complejos, para ver cómo se comporta el programa a partir de distintos datos de entrada.
-
-
 ## Anotaciones 
 
 El programa tiene una única funcionalidad así que solo hace falta hacer un test por tienda. El test es sencillo, tengo un par de páginas web descargadas y sobre ellas debemos tener un output deseado que es lo que comprueba los tests. El test es rápido (~50ms) y automático. No requiere de ninguna acción adicional, solo hace falta tener el `test.txt` adecuado a las páginas web introducidas.
