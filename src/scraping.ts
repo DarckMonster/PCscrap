@@ -2,6 +2,7 @@ import { file } from "bun";
 import { Componente } from "./componente";
 import { Tienda } from "./tienda";
 import { Modelos, TipoComponente } from "./tipo_componente";
+import { captureRejectionSymbol } from "stream";
 
 const modelos = Object.values(Modelos).filter((item) => {return item;});
 
@@ -45,12 +46,12 @@ export class Scraping {
     let centro = false;
     let anterior = "";
     if (elementos!=null) {
-      for (const e of elementos) {
+      elementos.forEach( e => {
         if (e == "\"product-list-middle-container\"") centro = false;
         if (centro && (!anterior.endsWith("€") && e.endsWith("€") || e.startsWith("d"))) lista.push(e);
         anterior=e;
         if (e == "\"product-grid\"")  centro = true;
-      }
+      });
 
       for (let i=0; i<lista.length-1; i+=2) {
         nombre=toNombre(lista[i]);
@@ -64,26 +65,22 @@ export class Scraping {
   }
 
   gpuMasBarata(modelo: Modelos) : Componente {
-    let comparar: Componente[] = new Array();
-    for (let p of this.componentes)
-      if (p.modelo==modelo)
-        comparar.push(p);
+    let comparar=this.componentes.filter( p => {if (p.modelo==modelo) return p;})
 
     if (comparar.length==0)
       console.error("No hay componentes de este modelo");
 
-    let barato: Componente={nombre: "", tipo: TipoComponente.GPU, modelo: Modelos.UNKNOWN, precioEur: Infinity};
-    for (const c of comparar)
-      if (c.precioEur<barato.precioEur)
-        barato=c;      
+    const barato = comparar.reduce( (prev, curr) => {
+      return prev.precioEur<curr.precioEur ? prev : curr;
+    })
 
-      return barato;
+    return barato;
   }
 
   constructor (tienda: Tienda) {
     this.tienda=tienda;
     this.componentes=new Array();
-    
+
     this.scrape('./tests/PcComponentesGPU.html', TipoComponente.GPU);
     this.scrape('./tests/PcComponentesCPU.html', TipoComponente.CPU);
   }
