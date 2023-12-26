@@ -16,33 +16,22 @@ function toNombre(str: string) : string {
 }
 
 function extraerModelo(nombre: string) : Modelos {
-  const plano = nombre.replaceAll(' ','').toUpperCase();
-  let simple;
-  let xt7900;
+  const upper = nombre.replaceAll(' ','').toUpperCase();
 
-  for (const modelo of modelos) {
-    simple = true;
-    xt7900 = false;
+  // Los modelos están ordenados primero están los modelos base 
+  // y después los ti, xt, xtx, etc.
+  // Si un modelo no es base (con ti, xt...) encontraría tanto el 
+  // modelo base como el especial. Así, si es especial, cogeremos el 
+  // último, el más especial
+  let model = modelos.findLast( m => {
+    if(upper.includes(m)) 
+      return m;
+  });
 
-    if (modelo.endsWith("XT") || modelo.endsWith("TI"))
-      simple = false;
-    if(modelo==Modelos.RX7900XT) 
-      xt7900 = true;
+  if (model == undefined)
+    model = Modelos.UNKNOWN;
 
-    if (plano.includes(modelo)) {
-      if (simple) {
-        let indice = plano.indexOf(modelo)+modelo.length;
-        if (!(indice==plano.indexOf("TI") || indice==plano.indexOf("XT")))
-          return modelo;
-      } else if(xt7900) {
-        if (plano[plano.indexOf(modelo)+modelo.length]!='X')
-          return modelo;
-      } else
-        return modelo;
-    }
-  }
-   
-  return Modelos.UNKNOWN;
+  return model;
 }
 
 export class Scraping {
