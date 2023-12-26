@@ -21,12 +21,12 @@ bun run test
 
 ## Documentación
 
-[ClaveSSH](docs/ClaveSSH.png)  
-[Config](docs/gitConfig.png)    
-[Historiasde de usuario](docs/historias-de-usuario.md)  
-[Milestones](docs/milestones.md)
-[Runtime](docs/runtime.md)     
-[Gestor de dependencias](docs/gestor-dependencias.md)    
-[Task runner](docs/task-manager.md)
-
-
+* [ClaveSSH](docs/ClaveSSH.png)  
+* [Config](docs/gitConfig.png)    
+* [Historiasde de usuario](docs/historias-de-usuario.md)  
+* [Milestones](docs/milestones.md)
+* [Runtime](docs/runtime.md)     
+* [Gestor de dependencias](docs/gestor-dependencias.md)    
+* [Task runner](docs/task-manager.md)
+* [Tests](docs/tests.md)
+* [Codigo](docs/code.md)

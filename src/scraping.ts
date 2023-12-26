@@ -18,11 +18,6 @@ function toNombre(str: string) : string {
 function extraerModelo(nombre: string) : Modelos {
   const upper = nombre.replaceAll(' ','').toUpperCase();
 
-  // Los modelos están ordenados primero están los modelos base 
-  // y después los ti, xt, xtx, etc.
-  // Si un modelo no es base (con ti, xt...) encontraría tanto el 
-  // modelo base como el especial. Así, si es especial, cogeremos el 
-  // último, el más especial
   let model = modelos.findLast( m => {
     if(upper.includes(m)) 
       return m;
@@ -88,10 +83,7 @@ export class Scraping {
   constructor (tienda: Tienda) {
     this.tienda=tienda;
     this.componentes=new Array();
-
-    // Aquí, con tienda tenemos las url de las paginas a descargar,
-    // cosa que se debería hacer con una funcion...
-    // En lugar de tener los HTML ya descargados 
+    
     this.scrape('./tests/PcComponentesGPU.html', TipoComponente.GPU);
     this.scrape('./tests/PcComponentesCPU.html', TipoComponente.CPU);
   }

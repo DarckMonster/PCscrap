@@ -22,8 +22,3 @@ En mi caso voy ha hacer el código adaptándolo a los tests. Además voy a segui
 ## Anotaciones 
 
 El programa tiene una única funcionalidad así que solo hace falta hacer un test por tienda. El test es sencillo, tengo un par de páginas web descargadas y sobre ellas debemos tener un output deseado que es lo que comprueba los tests. El test es rápido (~50ms) y automático. No requiere de ninguna acción adicional, solo hace falta tener el `test.txt` adecuado a las páginas web introducidas.
-
-### Pccomponentes
-* En *div id="product-grid"*
-* nombre &rarr; *title="..."* o en *data-product-name="..."*
-* precio &rarr; en *"product-card" -> "product-card__info-container"* ejemplo: 659,9€ siempre tiene el símbolo de € al final y si está en oferta está algo más escondido y tiene 2 precios, coger el primero.
