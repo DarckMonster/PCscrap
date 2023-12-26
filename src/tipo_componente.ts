@@ -23,5 +23,5 @@ export enum Modelos {
   RX7800XT='7800XT',
   RX7900XT='7900XT',
   RX7900XTX='7900XTX',
-  UNKNOWN='-1'
+  UNKNOWN='\0'
 }

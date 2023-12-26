@@ -107,4 +107,3 @@ export class Scraping {
     this.scrape('./tests/PcComponentesCPU.html', TipoComponente.CPU);
   }
 }
-
