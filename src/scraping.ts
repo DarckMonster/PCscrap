@@ -24,7 +24,7 @@ function extraerModelo(nombre: string) : Modelos {
       return m;
   });
 
-  if (model == undefined)
+  if (!model)
     model = Modelos.UNKNOWN;
 
   return model;
@@ -45,7 +45,7 @@ export class Scraping {
     let lista: string[] = [];
     let centro = false;
     let anterior = "";
-    if (elementos!=null) {
+    if (elementos) {
       elementos.forEach( e => {
         if (e == "\"product-list-middle-container\"") centro = false;
         if (centro && (!anterior.endsWith("€") && e.endsWith("€") || e.startsWith("d"))) lista.push(e);
