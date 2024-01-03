@@ -4,8 +4,11 @@ import { Tienda } from "../src/tienda";
 import { file } from "bun";
 import { Modelos } from "../src/tipo_componente";
 
-
-const scraping = new Scraping(new Tienda("https://www.pccomponentes.com",["/procesadores","/tarjetas-graficas"]));
+const tienda: Tienda = {
+  url: "https://www.pccomponentes.com",
+  path: ["/procesadores","/tarjetas-graficas"]
+}
+const scraping = new Scraping(tienda);
 const test_baratas = await file('./tests/test_baratas.txt').text();
 const test_price = test_baratas.split(/\r?\n/);
 

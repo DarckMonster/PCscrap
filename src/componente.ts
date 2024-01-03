@@ -1,4 +1,3 @@
-import { Mode } from "fs";
 import { Modelos, TipoComponente } from "./tipo_componente";
 
 export interface Componente {
