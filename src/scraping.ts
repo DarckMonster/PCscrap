@@ -1,10 +1,7 @@
 import { file } from "bun";
 import { Componente } from "./componente";
 import { Tienda } from "./tienda";
-import { Modelos, TipoComponente } from "./tipo_componente";
-import { captureRejectionSymbol } from "stream";
-
-const modelos = Object.values(Modelos).filter((item) => {return item;});
+import { modelos, TipoComponente } from "./tipo_componente";
 
 function eurotoNumber(str: string) : number {
   str=str.slice(0,-1).replace('.','').replace(',','.');
@@ -16,7 +13,7 @@ function toNombre(str: string) : string {
   return str.slice(str.indexOf("\"")+1,str.lastIndexOf("\""));
 }
 
-function extraerModelo(nombre: string) : Modelos {
+function extraerModelo(nombre: string) : string {
   const upper = nombre.replaceAll(' ','').toUpperCase();
 
   let model = modelos.findLast( m => {
@@ -24,10 +21,11 @@ function extraerModelo(nombre: string) : Modelos {
       return m;
   });
 
-  if (!model)
-    model = Modelos.UNKNOWN;
+  if (model)
+    return model;
 
-  return model;
+  console.error(`Modelo no encontrado ${nombre}`);
+  return "";
 }
 
 export class Scraping {
@@ -38,7 +36,7 @@ export class Scraping {
 
     const pagina_web = await file(str).text();
 
-    let nombre = "", precio = 0, modelo=Modelos.UNKNOWN;
+    let nombre = "", precio = 0, modelo = "";
     const regex = new RegExp(/"product-list-middle-container"|"product-grid"|(data-product-name=".+?")|((\d+\.)?\d{1,3}(,)?(\d+(<!-- -->)?€))/g);
     const elementos = pagina_web.match(regex);
 
@@ -64,7 +62,7 @@ export class Scraping {
     }
   }
 
-  gpuMasBarata(modelo: Modelos) : Componente {
+  gpuMasBarata(modelo: string) : Componente {
     let comparar=this.componentes.filter( p => {if (p.modelo==modelo) return p;})
 
     if (comparar.length==0)

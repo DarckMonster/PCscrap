@@ -1,8 +1,8 @@
-import { Modelos, TipoComponente } from "./tipo_componente";
+import { TipoComponente } from "./tipo_componente";
 
 export interface Componente {
   readonly nombre: string;
   readonly tipo: TipoComponente;
-  readonly modelo: Modelos;
+  readonly modelo: string;
   precioEur: number;
 }
