@@ -14,7 +14,7 @@ function toNombre(str: string) : string {
 }
 
 function extraerModelo(nombre: string) : string {
-  const upper = nombre.replaceAll(' ','').toUpperCase();
+  const upper = nombre.replaceAll(/[^\w\dñáéíóú]/g,'').toUpperCase();
 
   let model = modelos.findLast( m => {
     if(upper.includes(m)) 
