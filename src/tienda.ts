@@ -1,4 +1,4 @@
-export class Tienda {
-  URL: string;
-  PATH: string;
+export type Tienda = {
+  url: string;
+  path: string[];
 }

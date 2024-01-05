@@ -1,8 +1,8 @@
 import { TipoComponente } from "./tipo_componente";
 
-export class Componente {
-  nombre: string;
-  tipo: TipoComponente;
-  precioMaxEur: number;
-  precioMinEur: number;
+export interface Componente {
+  readonly nombre: string;
+  readonly tipo: TipoComponente;
+  readonly modelo: string;
+  precioEur: number;
 }

@@ -14,14 +14,19 @@ Para comprobar la sintaxis de esta entidad tendremos que ejecutar el siguiente c
 bun run check
 ```
 
+Para hacer un test rápido del funcionamiento del código simplemente ejecutamos el comando que nos porporciona el propio bun:
+```bash
+bun run test
+```
+
 ## Documentación
 
-[ClaveSSH](docs/ClaveSSH.png)  
-[Config](docs/gitConfig.png)    
-[Historiasde de usuario](docs/historias-de-usuario.md)  
-[Milestones](docs/milestones.md)
-[Runtime](docs/runtime.md)     
-[Gestor de dependencias](docs/gestor-dependencias.md)    
-[Task runner](docs/task-manager.md)
-
-
+* [ClaveSSH](docs/ClaveSSH.png)  
+* [Config](docs/gitConfig.png)    
+* [Historiasde de usuario](docs/historias-de-usuario.md)  
+* [Milestones](docs/milestones.md)
+* [Runtime](docs/runtime.md)     
+* [Gestor de dependencias](docs/gestor-dependencias.md)    
+* [Task runner](docs/task-manager.md)
+* [Tests](docs/tests.md)
+* [Codigo](docs/code.md)

@@ -6,7 +6,8 @@
     "bun-types": "latest"
   },
   "scripts": {
-    "check": "bun run tsc --noEmit ./src/scraping.ts"
+    "check": "bun run tsc --noEmit ./src/scraping.ts",
+    "test": "bun test"
  },
   "peerDependencies": {
     "typescript": "^5.0.0"
