@@ -8,7 +8,7 @@
   "scripts": {
     "check": "bun run tsc --noEmit ./src/scraping.ts",
     "test": "bun test",
-    "build-docker": "docker build -t pcscrap .",
+    "build-docker": "docker build -t darckmonster/pcscrap .",
     "docker": "docker run -u 1001 -tv `pwd`:/app/test darckmonster/pcscrap"
  },
   "peerDependencies": {
