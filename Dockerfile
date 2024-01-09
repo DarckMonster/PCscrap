@@ -6,14 +6,11 @@ WORKDIR /usr/src/app
 LABEL version="5.0.0"
 LABEL mainteiner="juanfcv2001@correo.ugr.es"
 
-# install dependencies into temp directory
-# this will cache them and speed up future builds
 FROM base AS install
-RUN mkdir -p /temp/dev
-COPY package.json bun.lockb /temp/dev/
-RUN cd /temp/dev && bun install --frozen-lockfile
+COPY package.json bun.lockb ./
+RUN bun install --frozen-lockfile
 
 # run the app
 USER bun
-EXPOSE 3000/tcp
+WORKDIR /app/test
 ENTRYPOINT [ "bun", "run", "test" ]
