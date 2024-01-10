@@ -1,8 +1,11 @@
 # Elección de la imagen para el contendor para pruebas
 
+## Requisito
+* Es indispensable que la imagen pueda ejecutar `bun`, es decir, que sea compatible con nuestro toolkit.
+
 ## Criterios de elección
 
-* Lo más importante es que podamos ejecutar `bun` en la imagen, es decir, que sea compatible con nuestro toolkit.
+* Usar imágnes de `bun`, aquellas que nos proporciona bun en DockerHub. 
 * Imaǵenes que sean actualizadas constantemente y que sigan dando soporte en el futuro. Esto hará que evitemos problemas de compatibilidad con futuras actualizaciones así como nos aseguramos que se mantenga la seguridad en nuestro contendor.
 * Cierto rendimiento, así que buscaremos que la imagen sea ligera para evitar que se sobrecargue.
 
