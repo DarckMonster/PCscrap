@@ -130,7 +130,7 @@ dist
 .pnp.*
 
 # Web Scraping
-*.html
+#*.html
 
 # Pruebas
 pruebas.ts
