@@ -19,6 +19,21 @@ Para hacer un test rápido del funcionamiento del código simplemente ejecutamos
 bun run test
 ```
 
+## Test en un entorno aislado
+
+Para poder crear la imagen de docker ejecutamos el primer comando y el segundo para ejecutarla:
+```bash
+bun run build-docker
+bun run docker
+```
+
+También se puede importar la imagen de [DockerHub](https://hub.docker.com/r/darckmonster/pcscrap) de la siguiente manera:
+```bash
+docker pull darckmonster/pcscrap
+bun run docker
+```
+
+
 ## Documentación
 
 * [ClaveSSH](docs/ClaveSSH.png)  
@@ -30,3 +45,4 @@ bun run test
 * [Task runner](docs/task-manager.md)
 * [Tests](docs/tests.md)
 * [Codigo](docs/code.md)
+* [Elección de imagen](docs/eleccion-imagen.md)
